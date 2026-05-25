@@ -118,7 +118,7 @@ h2, h3 {
   margin-top: 40px;
 }
 
- #pensamento-form {
+ #formulario-pensamento {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -136,7 +136,7 @@ h2, h3 {
   min-height: 80px;
 }
 
-#pensamento-form label {
+#formulario-pensamento label {
   margin-bottom: 16px;
   color: var(--Azul-Dark, #041832);
   font-family: "Poppins", sans-serif;
@@ -155,8 +155,8 @@ h2, h3 {
   line-height: normal;
 }
 
-#pensamento-form textarea,
-#pensamento-form input {
+#formulario-pensamento textarea,
+#formulario-pensamento input {
   margin-bottom: 24px;
   outline: none;
   border-style: none;
@@ -206,8 +206,9 @@ h2, h3 {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   row-gap: 32px;
+  column-gap: 24px;
 }
 
 .li-pensamento {
@@ -215,8 +216,8 @@ h2, h3 {
   padding: 16px;
   background: var(--Branco, #FFF);
   box-shadow: 8px 8px 0px 0px #154580;
-  flex: 1 1 calc(33.333% - 24px);
-  max-width: calc(33.333% - 24px);
+  flex: 1 1 calc(33.333% - 16px);
+  max-width: calc(33.333% - 16px);
   min-width: 384px;
   min-height: 315px; 
   display: flex;
@@ -281,4 +282,25 @@ span {
   height: 1px;
   background: #041832;
   margin: 96px 0 48px 0;
+}
+
+/* quando não houverem pensamentos cadastrados */
+.mensagem-vazia {
+  display: none;
+  text-align: center;
+  color: var(--Azul-Dark, #041832);
+  margin-top: 40px;
+}
+
+.mensagem-vazia img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.mensagem-vazia p {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
 }
